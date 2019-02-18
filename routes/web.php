@@ -77,7 +77,7 @@ Route::view('others/starter', 'others.starter')->name('starter');
 
 Route::group(['prefix'=>'dashboard'],function(){
 	Route::group(['prefix'=>'/super-administrador'],function(){
-
+		Route::resource('productos');
 	});
 	Route::group(['prefix'=>'/administrador'],function(){
 
