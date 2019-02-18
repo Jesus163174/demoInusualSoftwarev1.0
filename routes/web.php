@@ -75,4 +75,16 @@ Route::view('others/notFound', 'others.notFound')->name('notFound');
 Route::view('others/user-profile', 'others.user-profile')->name('user-profile');
 Route::view('others/starter', 'others.starter')->name('starter');
 
+Route::group(['prefix'=>'dashboard'],function(){
+	Route::group(['prefix'=>'/super-administrador'],function(){
+
+	});
+	Route::group(['prefix'=>'/administrador'],function(){
+
+	});
+	Route::group(['prefix'=>'/vendedor'],function(){
+
+	});
+});
+
 
