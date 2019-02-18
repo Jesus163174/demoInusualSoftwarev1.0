@@ -11,7 +11,9 @@
 |
 */
 
-
+Route::get('/', function () {
+    return view('dashboard.dashboardv1');
+});
 // Route::view('/', 'starter')->name('starter');
 Route::view('dashboard/dashboard1', 'dashboard.dashboardv1')->name('dashboard_version_1');
 Route::view('dashboard/dashboard2', 'dashboard.dashboardv2')->name('dashboard_version_2');
@@ -72,3 +74,5 @@ Route::view('sessions/forgot', 'sessions.forgot')->name('forgot');
 Route::view('others/notFound', 'others.notFound')->name('notFound');
 Route::view('others/user-profile', 'others.user-profile')->name('user-profile');
 Route::view('others/starter', 'others.starter')->name('starter');
+
+
